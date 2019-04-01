@@ -3,26 +3,25 @@
 // If a number is divisible by 5 print "Buzz" instead
 // If a number is divisible by 3 and 5 print "FizzBuzz" instead
 
-describe("FizzBuzz", function(){
-  const fB = new FizzBuzz()
+describe("fizzBuzz", function(){
   
   it("returns 'Fizz' when passed 3", function() {
-    expect(fB.fizzBuzz(3)).toEqual("Fizz");
+    expect(fizzBuzz(3)).toEqual("Fizz");
   });
 
   it("returns '1' when passed 1", function() {
-    expect(fB.fizzBuzz(1)).toEqual(1);
+    expect(fizzBuzz(1)).toEqual(1);
   });
 
   it("returns 'Fizz' when passed multiple of 3", function() {
-    expect(fB.fizzBuzz(6)).toEqual("Fizz");
+    expect(fizzBuzz(6)).toEqual("Fizz");
   });
 
   it("returns 'Buzz' when passed 5", function() {
-    expect(fB.fizzBuzz(5)).toEqual("Buzz");
+    expect(fizzBuzz(5)).toEqual("Buzz");
   });
 
   it("returns 'FizzBuzz' when passed a number that is a multiple of 3 and 5", function() {
-    expect(fB.fizzBuzz(15)).toEqual("FizzBuzz");
+    expect(fizzBuzz(15)).toEqual("FizzBuzz");
   });
 });
