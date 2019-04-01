@@ -17,4 +17,12 @@ describe("FizzBuzz", function(){
   it("returns 'Fizz' when passed multiple of 3", function() {
     expect(fB.fizzBuzz(6)).toEqual("Fizz");
   });
+
+  it("returns 'Buzz' when passed 5", function() {
+    expect(fB.fizzBuzz(5)).toEqual("Buzz");
+  });
+
+  it("returns 'FizzBuzz' when passed a number that is a multiple of 3 and 5", function() {
+    expect(fB.fizzBuzz(15)).toEqual("FizzBuzz");
+  });
 });
